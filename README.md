@@ -1,7 +1,10 @@
 ember-number-to-words-shim
 ==============================================================================
 
-[Short description of the addon.]
+[![npm version](https://badge.fury.io/js/ember-number-to-words-shim.svg)](https://badge.fury.io/js/ember-number-to-words-shim)
+[![Build Status](https://travis-ci.org/CrowdStrike/ember-number-to-words-shim.svg?branch=master)](https://travis-ci.org/CrowdStrike/ember-number-to-words-shim)
+
+[Ember.js](https://www.emberjs.com) [number-to-words](https://github.com/marlun78/number-to-words) shim
 
 Installation
 ------------------------------------------------------------------------------
@@ -14,7 +17,14 @@ ember install ember-number-to-words-shim
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+```js
+import Controller from '@ember/controller';
+import converter from 'number-to-words';
+
+export default Controller.extend({
+  words: converter.toWords(1)
+});
+```
 
 
 Contributing

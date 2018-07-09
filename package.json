@@ -1,13 +1,13 @@
 {
   "name": "ember-number-to-words-shim",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember.js number-to-words shim",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/CrowdStrike/ember-number-to-words-shim.git",
   "license": "MIT",
-  "author": "",
+  "author": "Kelly Selden",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -19,13 +19,11 @@
     "test": "ember test",
     "test:all": "ember try:each"
   },
-  "dependencies": {
-    "ember-cli-babel": "^6.6.0"
-  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~3.2.0",
+    "ember-cli-babel": "^6.6.0",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
     "ember-cli-htmlbars": "^2.0.1",
@@ -46,7 +44,11 @@
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.1",
     "loader.js": "^4.2.3",
+    "number-to-words": "^1.2.3",
     "qunit-dom": "^0.6.2"
+  },
+  "peerDependencies": {
+    "number-to-words": ""
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
