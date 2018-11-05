@@ -3,7 +3,7 @@
 const path = require('path');
 
 module.exports = {
-  name: 'ember-number-to-words-shim',
+  name: require('./package').name,
 
   included() {
     this._super.included.apply(this, arguments);
