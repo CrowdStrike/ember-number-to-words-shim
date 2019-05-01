@@ -8,7 +8,10 @@ module.exports = {
   included() {
     this._super.included.apply(this, arguments);
 
-    this.import(path.resolve(path.dirname(require.resolve('number-to-words')), '../numberToWords.js').substr(process.cwd().length + 1));
+    let peerDependencyPath = path.resolve(path.dirname(require.resolve('number-to-words')), '../numberToWords.js')
+      .match(/\/(node_modules\/.+)/)[1];
+
+    this.import(peerDependencyPath);
     this.import('vendor/shims/number-to-words.js');
   }
 };
