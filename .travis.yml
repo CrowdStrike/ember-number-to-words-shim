@@ -53,3 +53,12 @@ jobs:
 
 script:
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
+
+deploy:
+  provider: npm
+  email: kelly.selden@crowdstrike.com
+  api_key:
+    secure: hHIAnk0rdpkgQtyhlQ6BntBdO+7ySAAxmdVomt4br7pkbJTcPdUpMU0DcLEz2UUy0j72Q54Emjod/wqZckvFmcoZhFuHFJvncyimt4mZU8ITYIfeC/E3d796LuSeM366uuM3kIqbqZdt8gvSpGLqMa6r74mwpYXkWavY+h1VEPn9vJFOSTy6Mqnghtoz87nSdD3+EVcFzAJmFQw8o3kRiAeHe72axDln3E3tyA9cx52U76RFz01UZiGJfQAt+EpIKAk3VtLlb0Ny4r7kS8U/LId1fKF/U+iIW1SOfkLyny0ocW7OW31J4whxmfKmTpW+OIa+QfgMtfwi/An+7yYALQDtms5lgBoHQ7ay3A6KmHvP1ykHM6fKpYlfRQVEA6TA5Ddrn+MSG7ZOF/CBQyT7q3cCPbR13yG5LGUpwfhmRCEFQ0DBzPJgsQu15T+P7NaeKHq8fmq9z8baLH/0v6cIEQA65IHXwcMrgpaGyZ3Jf6j2NasFsOGLIQ/Ybb4SXDBlYiDxy6D/fHqwn7ddvmeI20gyUb/sYVwqqtl6i+6fpr9vxXrjBK+CaODLje1KQ4jomXJYupxl1dojkXZdUZv3fFLNvUYcafFtHEKBspLrHh0GP2sX2AoFK8mwim41zCyvRZk2yQahIO3dhPd36cS8hi3WiaOR4GAPtt5YJxVSKz0=
+  on:
+    tags: true
+    repo: CrowdStrike/ember-number-to-words-shim
