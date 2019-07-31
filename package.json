@@ -46,7 +46,8 @@
     "eslint-plugin-node": "^7.0.1",
     "loader.js": "^4.7.0",
     "number-to-words": "^1.2.3",
-    "qunit-dom": "^0.8.0"
+    "qunit-dom": "^0.8.0",
+    "renovate-config-standard": "^2.0.0"
   },
   "peerDependencies": {
     "number-to-words": ""
