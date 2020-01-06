@@ -1,6 +1,6 @@
 {
   "name": "ember-number-to-words-shim",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Ember.js number-to-words shim",
   "keywords": [
     "ember-addon"
